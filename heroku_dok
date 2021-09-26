@@ -1,0 +1,1 @@
+concurrently "cd core_service && npm run push && npm run release" "cd pricing_service && npm run dockerize" "cd booking_service && npm run dockerize" "cd trip_service && npm run dockerize"

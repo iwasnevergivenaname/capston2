@@ -1,0 +1,7 @@
+/client/
+/*/node_modules
+.idea
+run
+dump.rdb
+.env
+node_modules

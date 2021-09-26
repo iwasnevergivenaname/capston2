@@ -1,0 +1,17 @@
+setup:
+  addons:
+    - plan: heroku-redis
+      as: REDIS_URL
+
+build:
+  docker:
+    book: ./booking_service/Dockerfile
+    core: ./core_service/Dockerfile
+    price: ./pricing_service/Dockerfile
+    trip: ./trip_service/Dockerfile
+
+run:
+  trip: npm start
+  price: npm start
+  book: npm start
+  core: npm start
